@@ -1,3 +1,5 @@
+package lesson_3;
+
 public class manualTask14 {
     public static void main(String[] args){
         //Создать массив оценок произвольной длины, вывести максимальную и

@@ -1,3 +1,5 @@
+package lesson_3;
+
 public class manualTask9 {
     public static void main(String[] args){
         //надо получить ряд случайных чисел, и посчитать
@@ -8,7 +10,7 @@ public class manualTask9 {
 
         double averageMulti = 0;
         double multiplication = 1;
-        int n = 0;
+        int n = 1;
         int x = (int)(Math.random() * 20);
 
         while(x != 0) {
@@ -22,6 +24,9 @@ public class manualTask9 {
         } else {
             averageMulti = 0;
         }
+
+
         System.out.println("Итераций цикла: " + n + "\nСреднее:" + averageMulti);
+        System.out.printf("%.1f", averageMulti);
     }
 }
