@@ -1,3 +1,5 @@
+package lesson_3;
+
 public class manualTask10 {
     public static void main(String[] args){
         //Посчитать факториал числа в границах от 10 до 15 (не используя рекурсию).

@@ -1,3 +1,5 @@
+package lesson_3;
+
 public class manualTask16 {
     public static void main(String[] args){
         //Определите сумму элементов одномерного массива, расположенных между
