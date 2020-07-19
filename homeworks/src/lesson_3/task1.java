@@ -1,3 +1,5 @@
+package lesson_3;
+
 public class task1 {
     public static void main(String[] args){
         //Начав тренировки, спортсмен в первый день пробежал 10 км.

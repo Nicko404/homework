@@ -1,3 +1,5 @@
+package lesson_3;
+
 public class task3 {
     public static void main(String[] args){
         //Вычислить: 1+2+4+8+...+256

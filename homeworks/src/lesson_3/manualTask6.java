@@ -1,3 +1,5 @@
+package lesson_3;
+
 import java.util.Scanner;
 
 public class manualTask6 {
