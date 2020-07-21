@@ -1,3 +1,5 @@
+package lesson_3;
+
 public class manualTask13 {
     public static void main(String[] args){
         //Создать последовательность случайных чисел, найти и вывести наибольшее

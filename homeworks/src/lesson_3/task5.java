@@ -1,3 +1,5 @@
+package lesson_3;
+
 public class task5 {
     public static void main(String[] atgs){
         //Напишите программу печати таблицы перевода расстояний из дюймов в

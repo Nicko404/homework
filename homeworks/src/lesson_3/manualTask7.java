@@ -1,3 +1,5 @@
+package lesson_3;
+
 import java.util.Scanner;
 
 public class manualTask7 {
@@ -13,7 +15,7 @@ public class manualTask7 {
         double hypotinuse = (a * a) + (b * b);
         System.out.println(Math.sqrt(hypotinuse));
 
-        if (Math.sqrt(hypotinuse) <= r) {
+        if (Math.sqrt(hypotinuse) <= r * 2) {
             System.out.println("Картонка полностью закроет отверстие!");
         } else {
             System.out.println("Картонка не полностью закроет отверстие!");
