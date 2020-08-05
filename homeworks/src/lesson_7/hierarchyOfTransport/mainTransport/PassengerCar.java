@@ -24,6 +24,7 @@ public class PassengerCar extends GroundTransport {
                 this.maxSpeed, exenditure);
     }
 
+    @Override
     public String characteristic() {
         float powerKilowatts = (float) (power * 0.74);
         return String.format("This is a passenger car: power = %d, " +

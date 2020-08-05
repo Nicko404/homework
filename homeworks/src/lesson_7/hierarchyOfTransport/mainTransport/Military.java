@@ -25,6 +25,7 @@ public class Military extends AirTransport {
         } else System.out.println("Боеприпасы отсутсвуют!");
     }
 
+    @Override
     public String characteristic() {
         float powerKilowatts = (float) (power * 0.74);
         return String.format("This is a military airplane: power = %d, " +
