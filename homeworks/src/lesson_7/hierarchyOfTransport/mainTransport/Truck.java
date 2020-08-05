@@ -18,6 +18,7 @@ public class Truck extends GroundTransport {
         }
     }
 
+    @Override
     public String characteristic() {
         float powerKilowatts = (float) (power * 0.74);
         return String.format("This is a truck: power = %d, " +

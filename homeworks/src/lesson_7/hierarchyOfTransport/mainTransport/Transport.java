@@ -11,8 +11,10 @@ public abstract class Transport {
         this.maxSpeed = maxSpeed;
         this.weight = weight;
         this.brand = brand;
+    }
 
-
+    public String characteristic() {
+        return null;
     }
 
 }
