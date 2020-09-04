@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Devices>
+    <Device id="rm220034">
+        <Name>Mouse Bloody r8</Name>
+        <Origin>China</Origin>
+        <Price Currency="RUB">85.12</Price>
+        <Type>
+            <Peripheral>true</Peripheral>
+            <EnergyConsumption Dimension="Kwatt">0.7</EnergyConsumption>
+            <Cooler>false</Cooler>
+            <GroupOfComponent>subsidiary</GroupOfComponent>
+            <Ports>Micro-USB</Ports>
+            <Critical>false</Critical>
+        </Type>
+    </Device>
+</Devices>
