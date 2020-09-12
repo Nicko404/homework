@@ -1,6 +1,5 @@
 package lesson_6.manualTask25;
 
-import jdk.management.cmm.SystemResourcePressureMXBean;
 
 class Atm {
     //Создать класс и объекты описывающие Банкомат. Набор купюр находящихся в
