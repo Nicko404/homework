@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema">
+
+    <element name="books">
+        <complexType>
+            <sequence>
+
+                <element name="book" maxOccurs="unbounded">
+                    <complexType>
+                        <sequence>
+
+                            <element name="title">
+                                <simpleType>
+
+                                    <restriction base="string"/>
+                                </simpleType>
+                            </element>
+
+                            <element name="author">
+                                <simpleType>
+
+                                    <restriction base="string"/>
+                                </simpleType>
+                            </element>
+
+                            <element name="genre">
+                                <simpleType>
+
+                                    <restriction base="string"/>
+                                </simpleType>
+                            </element>
+
+                            <element name="description">
+                                <simpleType>
+
+                                    <restriction base="string">
+                                        <maxLength value="200"/>
+                                    </restriction>
+                                </simpleType>
+                            </element>
+
+                            <element name="onlyReadingRoom">
+                                <simpleType>
+
+                                    <restriction base="boolean"/>
+                                </simpleType>
+                            </element>
+
+                        </sequence>
+
+                        <attribute name="id" type="integer"/>
+
+                    </complexType>
+                </element>
+
+            </sequence>
+        </complexType>
+    </element>
+
+</schema>
