@@ -17,4 +17,3 @@ public class Runner {
         System.out.println(interval1);
     }
 }
-//Лоханулся с pull requests-ом и залил ветку с дз 6 урока в мастер, до того, как ты ее проверил
