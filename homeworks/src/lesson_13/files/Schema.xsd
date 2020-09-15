@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema">
+    <element name="Devices">
+        <complexType>
+            <sequence>
+
+                <element name="Device">
+                    <complexType>
+                        <sequence>
+
+
+                            <element name="Name">
+                                <simpleType>
+
+                                    <restriction base="string"/>
+                                </simpleType>
+                            </element>
+
+
+                            <element name="Origin">
+                                <simpleType>
+
+                                    <restriction base="string">
+                                        <minLength value="2"/>
+                                        <maxLength value="35"/>
+                                    </restriction>
+                                </simpleType>
+                            </element>
+
+
+                            <element name="Price">
+                                <complexType>
+                                    <simpleContent>
+
+                                        <extension base="float">
+                                            <attribute name="Currency"
+                                                       type="string"
+                                                       default="USD"/>
+                                        </extension>
+                                    </simpleContent>
+                                </complexType>
+                            </element>
+
+
+                            <element name="Type">
+                                <complexType>
+                                    <sequence>
+
+
+                                        <element name="Peripheral">
+                                            <simpleType>
+
+                                                <restriction base="boolean"/>
+                                            </simpleType>
+                                        </element>
+
+
+                                        <element name="EnergyConsumption">
+                                            <complexType>
+                                                <simpleContent>
+                                                    <extension base="float">
+                                                        <attribute name="Dimension"
+                                                                   default="watt"/>
+                                                    </extension>
+                                                </simpleContent>
+                                            </complexType>
+                                        </element>
+
+
+                                        <element name="Cooler">
+                                            <simpleType>
+
+                                                <restriction base="boolean"/>
+                                            </simpleType>
+                                        </element>
+
+
+                                        <element name="GroupOfComponent">
+                                            <simpleType>
+
+                                                <restriction base="string"/>
+                                            </simpleType>
+                                        </element>
+
+
+                                        <element name="Ports">
+                                            <simpleType>
+
+                                                <restriction base="string">
+                                                    <enumeration value="USB"/>
+                                                    <enumeration value="Type-C"/>
+                                                    <enumeration value="COM"/>
+                                                    <enumeration value="LPT"/>
+                                                    <enumeration value="HDMI"/>
+                                                    <enumeration value="Micro-USB"/>
+                                                </restriction>
+                                            </simpleType>
+                                        </element>
+
+
+                                        <element name="Critical">
+                                            <simpleType>
+
+                                                <restriction base="boolean"/>
+
+                                            </simpleType>
+                                        </element>
+                                    </sequence>
+                                </complexType>
+                            </element>
+                        </sequence>
+
+                        <attribute name="id" type="ID"/>
+
+                    </complexType>
+                </element>
+            </sequence>
+        </complexType>
+    </element>
+</schema>
