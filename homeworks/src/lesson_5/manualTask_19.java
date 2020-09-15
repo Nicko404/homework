@@ -9,18 +9,15 @@ public class manualTask_19 {
     public static void main(String[] args) {
         String str = "Имеется строка с текстом. Подсчитать количество слов в тексте. Желательно\n" +
                 " учесть, что слова могут разделяться несколькими пробелами, в начале и конце\n" +
-                " текста также могут быть пробелы, но могут и отсутствовать.  ";
-        str += " ";
-        boolean isWord;
-        int n = 0;
+                " текста также могут быть пробелы, но могут и отсутствовать.";
+        str = str.trim();
+        str = str.replace(" ,", "");
+        str = str.replace(" .", "");
+        String[] works = str.split(" ");
 
-        for (int i = 0; i < str.length() - 1; i++) {
-            isWord = str.charAt(i) != ' ';
-            if (str.charAt(i + 1) == ' ' && isWord) {
-                n++;
-            }
+        int n = works.length;
 
-        }
+
         System.out.println("В заданной строке: " + n);
 
     }
